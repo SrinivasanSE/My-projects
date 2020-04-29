@@ -1,0 +1,33 @@
+#login{
+    background-color:#ffffff;
+    width:350px;
+    margin-top:100px;
+    border:2px solid green;
+    padding:50px;
+    }
+#todoadd{
+    background-color:#ffffff;
+    width:350px;
+    margin-top:100px;
+    border:1px solid Tomato;
+    padding:50px;
+    text-align:center;
+    }
+
+.loginbackground{
+background-image:url('/static/users/login-background.png');
+background-size: cover;
+background-repeat: no-repeat;
+}
+#register{
+    background-color:#ffffff;
+    width:450px;
+    margin-top:200px;
+    border:1px solid Tomato;;
+    padding:50px;
+}
+.registerbackground{
+background-image:url('/static/users/register_background.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+}

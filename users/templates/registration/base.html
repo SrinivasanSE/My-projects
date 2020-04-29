@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'users/home.css' %}">
+    <link rel="stylesheet" href="{% static 'users/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'users/profile.css' %}">
+    <script src="{% static 'users/profile.js' %}"></script>
+   {% block title %}
+    {% endblock title %}
+</head>
+<div class="container mt-9" style="margin-top:100px;">
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-success alert-dismissible">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            <strong> {{message}}</strong>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+</div>
+{% block content %}
+{% endblock %}
+<div class="search-text text-center">
+   <div class="container">
+        <div class="row text-center">
+            <div class="form">
+                <form id="search-form" class="form-search form-horizontal">
+                    <input type="text" class="input-search" placeholder="Search">
+                    <button type="submit" class="btn-search">Search</button>
+                </form>
+            </div>
+        </div>
+   </div>
+</div>
+
+<footer>
+ <div class="container">
+   <div class="row text-center">
+
+             <div class="col-md-6 col-sm-6 col-xs-12">
+              <ul class="list-inline">
+
+                           <li>
+                                <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                           </li>
+
+                           <li>
+                                <a href="#"><i class="fa fa-dropbox fa-2x"></i></a>
+                           </li>
+
+                           <li>
+                                <a href="#"><i class="fa fa-flickr fa-2x"></i></a>
+                           </li>
+
+                           <li>
+                                <a href="#"><i class="fa fa-github fa-2x"></i></a>
+                           </li>
+
+                           <li>
+                                <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                           </li>
+
+                           <li>
+                                <a href="#"><i class="fa fa-tumblr fa-2x"></i></a>
+                           </li>
+
+                           <li>
+                                <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+                          </li>
+
+                 </ul>
+               </div>
+
+             <div class="col-md-6 col-sm-6 col-xs-12">
+              <ul class="menu list-inline">
+
+                     <li>
+                        <a href="#">Home</a>
+                      </li>
+
+                      <li>
+                         <a href="#">About</a>
+                      </li>
+
+                      <li>
+                        <a href="#">Blog</a>
+                      </li>
+
+                      <li>
+                         <a href="#">Gallery </a>
+                      </li>
+
+                      <li>
+                        <a href="#">Contact</a>
+                     </li>
+
+             </ul>
+           </div>
+
+
+       </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row text-center">
+     	        <p>Copyright © 2019 All rights reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</html>

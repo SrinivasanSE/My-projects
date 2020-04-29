@@ -1,0 +1,27 @@
+#leftbox {
+                float:left;
+                width:20%;
+                height:280px;
+                border-right:2px solid green;
+                text-align:center;
+            }
+#middlebox{
+                float:left;
+                width:40%;
+                height:280px;
+                text-align:center;
+            }
+#rightbox{
+                float:right;
+                width:40%;
+                height:280px;
+                 text-align:center;
+            }
+
+#panel{
+display:none;
+padding:50px;
+}
+#showbutton{
+display:none;
+}
